@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+      th, td {
+          padding: 5px;
+          }
+
+          textarea {
+            width:100%;
+            resize: vertical;
+            padding:15px;
+            border-radius:15px;
+            border:0;
+            box-shadow:4px 4px 10px rgba(0,0,0,0.06);
+            height:150px;
+        }
+
+        input[type=text],[type=number] {
+            padding:10px;
+            border:0;
+            box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+            width: 250px;
+        }
+
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pendaftaran PT. Excellent</title>
+</head>
+<body>
+    <table style="width:100%">
+        <tr>
+            <td><h2> PT. EXCELLENT </h2></td>
+        </tr>
+        <tr>
+            <td>Jl. Kembang Permai II Blok I 5 No.6</td>
+        </tr>
+        <tr>
+            <td>Puri Indah, Jakarta Barat 11610</td>
+        </tr>
+        <tr>
+            <td>021-93397876,5805352</td>
+        </tr>
+        <tr>
+            <td>Fax 021 - 5805352, E-mail: excellent@cbn.net.id</td>
+        </tr>
+    </table>
+    <hr style="color: black; background-color: black; border-color: transparent; border-width: 3px;">
+
+    <table style="width:100%" border="0">
+        <tr>
+            <th colspan="6"><h2><U>FORMULIR PENDAFTARAN</U></h2></th>
+
+           <th>
+            <p><input type="file"  accept="image/*" name="image" id="file"  onchange="loadFile(event)" style="display: none;"></p>
+            <p><label for="file" style="cursor: pointer; color: blue;">Upload Pas Foto 2 x 3</label></p>
+            <p><img id="output" width="200" /></p>
+
+            <script>
+            var loadFile = function(event) {
+        	var image = document.getElementById('output');
+        	image.src = URL.createObjectURL(event.target.files[0]);
+            };
+            </script>
+            </th>
+        </tr>
+
+        <tr>
+            <td><strong>I.</strong> </td>
+            <td colspan="5"><strong>Keterangan Pribadi</strong></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td >1.</td>
+            <td>Nama Lengkap</td>
+            <td>:</td>
+            <td colspan="2"><input type="text" placeholder="Masukkan Nama Lengkap"></td>
+        </tr>
+
+        <tr>
+            <td></td>
+            <td>2.</td>
+            <td>Nama Panggilan</td>
+            <td>:</td>
+            <td colspan="2"><input type="text" placeholder="Masukkan Nama Panggilan"></td>
+        </tr>
+
+        <tr>
+            <td></td>
+            <td>3.</td>
+            <td>Jenis Kelamin</td>
+            <td>:</td>
+            <td>
+                <input type="radio" id="laki-laki" name="jeniskelamin" value="laki-laki">
+                <label for="laki-laki">Laki-Laki</label><br>
+            </td>
+            <td>
+                <input type="radio" id="perempuan" name="jeniskelamin" value="perempuan">
+                <label for="perempuan">Perempuan</label>
+            </td>
+        </tr>
+
+        <tr>
+            <td></td>
+            <td>4.</td>
+            <td>Tempat Lahir</td>
+            <td>:</td>
+            <td colspan="2"><input type="text" placeholder="Masukkan Tempat Lahir"></td>
+        </tr>
+
+        <tr>
+            <td></td>
+            <td>5.</td>
+            <td>Tanggal Lahir</td>
+            <td>:</td>
+            <td colspan="2"><input type="date"></td>
+        </tr>
+
+        <tr>
+            <td></td>
+            <td>6.</td>
+            <td>Agama</td>
+            <td>:</td>
+            <td colspan="2">
+                <select name="agama" id="agama">
+                    <option disabled selected value> -- Pilih Agama -- </option>
+                    <option value="Islam">Islam</option>
+                    <option value="kristen">Kristen</option>
+                    <option value="Katholik">Katholik</option>
+                    <option value="buddha">Buddha</option>
+                    <option value="Hindu">Hindu</option>
+                </select>
+            </td>
+        </tr>
+
+        <tr>
+            <td></td>
+            <td>7.</td>
+            <td>Kewarganegaraan</td>
+            <td>:</td>
+            <td colspan="2"><input type="text" placeholder="Masukkan Kewarganegaraan"></td>
+        </tr>
+        
+        <tr>
+            <td></td>
+            <td>8.</td>
+            <td>Anak Ke</td>
+            <td>:</td>
+            <td colspan="2"><input type="text" placeholder="Masukkan Anak Ke berapa"></td>
+        </tr>
+
+        <tr>
+            <td></td>
+            <td>9.</td>
+            <td>Jumlah Saudara</td>
+            <td>:</td>
+            <td colspan="2"><input type="text" placeholder="Masukkan Jumlah Saudara"></td>
+        </tr>
+
+        <tr>
+            <td></td>
+            <td>10.</td>
+            <td>Status</td>
+            <td>:</td>
+            <td>
+                <input type="radio" id="belum" name="kawin" value="belum">
+                <label for="belum">Belum Menikah</label><br>
+            </td>
+            <td>
+                <input type="radio" id="sudah" name="kawin" value="sudah">
+                <label for="sudah">Sudah Menikah</label>
+            </td>
+        </tr>
+
+        <tr>
+            <td></td>
+            <td>11.</td>
+            <td>Jenis SIM</td>
+            <td>:</td>
+            <td colspan="2"><input type="text" placeholder="Masukkan Jenis SIM"></td>
+        </tr>
+
+        <tr><td></td></tr>
+
+        <tr>
+            <td><strong>II.</strong> </td>
+            <td colspan="6"><strong>Keterangan Tempat Tinggal</strong></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td >1.</td>
+            <td>Alamat Lengkap</td>
+            <td>:</td>
+            <td colspan="2">
+                <textarea rows="4" cols="50" placeholder="Isi Alamat kamu"></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>2.</td>
+            <td>Nomor KTP</td>
+            <td>:</td>
+            <td colspan="2"><input type="number" placeholder="Masukkan Nomor KTP"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>3.</td>
+            <td>Nomor Tlp / Hp</td>
+            <td>:</td>
+            <td colspan="2"><input type="number" placeholder="Masukkan Nomor Tlp /HP..."></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td >4.</td>
+            <td>Alamat lain yang dapat dihubungi</td>
+            <td>:</td>
+            <td colspan="2">
+                <textarea rows="4" cols="50" placeholder="Isi Alamat lain yang dapat dihubungi..."></textarea>
+            </td>
+        </tr>
+
+        <tr>
+            <td></td>
+            <td>5.</td>
+            <td>Nomor Tlp / Hp lain yang dapat dihubungi</td>
+            <td>:</td>
+            <td colspan="2"><input type="number" placeholder="Masukkan Nomor Tlp / HP lain"></td>
+        </tr>
+
+        <tr>
+            <td>
+                <input type="submit">
+            </td>
+        </tr>
+    </table>
+
+</body>
+</html>
+
